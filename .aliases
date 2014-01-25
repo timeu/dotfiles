@@ -6,6 +6,15 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# Shortcuts
+alias d="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/projects"
+alias g="git"
+alias h="history"
+alias j="jobs"
+
 # programs
 alias st='open -a "Sublime Text 2"'
 # also/or do this:
@@ -53,6 +62,12 @@ alias la="ls -la ${colorflag}"
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # Always use color output for `ls`
 if [[ "$OSTYPE" =~ ^darwin ]]; then
