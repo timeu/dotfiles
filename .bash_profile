@@ -6,7 +6,7 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-. ~/code/z/z.sh
+. ~/dotfiles/z/z.sh
 
 # init rvm
 source ~/.rvm/scripts/rvm
@@ -14,6 +14,12 @@ source ~/.rvm/scripts/rvm
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
+
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
