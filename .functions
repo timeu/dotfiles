@@ -406,7 +406,21 @@ function gurl() {
   echo "https://github.com/$user_repo"
 }
 
+# open all changed files (that still actually exist) in the editor
+# credit: @cowboy
+function ged() {
+  local files=()
+  for f in $(git diff --name-only "$@"); do
+    [[ -e "$f" ]] && files=("${files[@]}" "$f")
+  done
+  local n=${#files[@]}
+  echo "Opening $n $([[ "$@" ]] || echo "modified ")file$([[ $n != 1 ]] && \
+    echo s)${@:+ modified in }$@"
+  q "${files[@]}"
+}
+
 # open last commit in GitHub, in the browser.
+# credit: @cowboy
 function gfu() {
   local n="${@:-1}"
   n=$((n-1))
