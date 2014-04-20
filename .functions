@@ -234,22 +234,19 @@ EOF
 # Install Grunt plugins and add them as `devDependencies` to `package.json`
 # Usage: `gi contrib-watch contrib-uglify zopfli`
 function gi() {
-        local IFS=,
-        eval npm install --save-dev grunt-{"$*"}
+        npm install --save-dev ${*/#/grunt-}
 }
 
 # Install Gulp plugins and add them as `devDependencies` to `package.json`
 # Usage: `gp uglify clean cache csso`
 function gp() {
-        local IFS=,
-        eval npm install --save-dev gulp-{"$*"}
+        npm install --save-dev ${*/#/gulp-}
 }
 
 # Install Yeoman generators
 # Usage: `yi webapp gruntfile angular`
 function yi() {
-    local IFS=,
-    eval npm install -g generator-{"$*"}
+        npm install --save-dev ${*/#/generator-}
 }
 
 
