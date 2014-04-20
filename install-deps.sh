@@ -19,8 +19,6 @@ npm install -g nave
 # you need the code CLI tools YOU FOOL.
 ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 
-
-
 # https://github.com/rupa/z
 # z, oh how i love you
 mkdir -p ~/dotfiles/z
@@ -44,8 +42,8 @@ ln -s ~/Dropbox/Public/Photo\ Booth/ ~/Pictures/Photo\ Booth
 # now you can record photobooth videos quickly and they upload to dropbox DURING RECORDING
 # then you grab public URL and send off your video message in a heartbeat.
 
-
-
+# commonly used npm deps
+sudo npm install -g yo gulp grunt-cli jshint browserify generator-webapp generator-gulp-webapp
 
 # chrome canary as default
 # on a mac you can set chrome canary as your default inside of Safari preferences :)
