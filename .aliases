@@ -61,7 +61,7 @@ alias l="ls -l ${colorflag}"
 alias la="ls -la ${colorflag}"
 
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"'
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
