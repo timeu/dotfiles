@@ -16,6 +16,7 @@ alias h="history"
 alias j="jobs"
 
 # programs
+
 alias st='open -a "Sublime Text"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
@@ -33,6 +34,9 @@ alias fireworks="open -a '/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.
 alias photoshop="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
 alias gpr="~/code/gpr $1"
 
+# Thanks to stefanpenner for this one.
+# https://www.youtube.com/watch?v=SMWi7CLoZ2Q
+alias nom="rm -rf node_modules && npm cache clear && npm i"
 
 # general shortcuts
 alias pro="cd ~/projects"
