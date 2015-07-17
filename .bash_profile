@@ -5,12 +5,11 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 # init z   https://github.com/rupa/z
 . ~/dotfiles/z/z.sh
-
-# init rvm
-source ~/.rvm/scripts/rvm
-
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
