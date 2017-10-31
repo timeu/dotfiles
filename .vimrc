@@ -1,6 +1,7 @@
 " Make vim more useful
 set nocompatible
-
+let mapleader = "\<Space>"
+set showcmd
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
